@@ -14,7 +14,7 @@ uint239_t FromInt(uint32_t value, uint32_t shift)
 		uint8_t data_piece = (value >> (i * 7)) & 0x7F;
 
 		if (short_shift != 0)
-		{
+	{
 			uint8_t first_part = data_piece >> (7 - short_shift);
 			uint8_t second_part = data_piece & ((1 << (7 - short_shift)) - 1);
 
